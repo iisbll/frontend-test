@@ -13,7 +13,7 @@ const Counter = (props) => {
   return (
     <div className="counter-container">
       <div className="title">
-        {title}
+        <span>{title}</span>
         <button onClick={() => { deleteCounter(id); }}>
           <i className="fas fa-trash-alt" />
         </button>

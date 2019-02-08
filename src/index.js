@@ -46,7 +46,8 @@ class App extends Component {
   }
 
   onInputChange = (e) => {
-    this.setState({ counterName: e.target.value });
+    const TRIMMED = e.target.value.trim();
+    !_.isEmpty(TRIMMED) && this.setState({ counterName: e.target.value });
   }
 
   onIncrement = (id) => {
