@@ -1,0 +1,125 @@
+body {
+  font-family: 'Comfortaa', cursive;
+  background-color: #f1f1f1;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  margin: 0 auto;
+  padding: 30px;
+  position: relative;
+  top: 200px;
+  width: 300px;
+}
+
+h1 {
+  text-align: center;
+}
+
+
+/* INPUT */
+
+input {
+  -webkit-appearance: none;
+  background: none;
+  border-radius: 40px;
+  border: 3px solid #000000;
+  box-shadow: inset 0 0 0 none;
+  box-sizing: border-box;
+  font-size: 14px;
+  height: 40px;
+  outline: none;
+  padding-left: 10px;
+  transition: 0.3s;
+  width: 88%;
+}
+
+.input-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+
+/* COUNTERS */
+
+.counter-container {
+  display: flex;
+  height: 20px;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.count {
+  display: inline-block;
+  text-align: right;
+}
+
+.count span {
+  min-width: 20px;
+}
+
+
+/* BUTTONS */
+
+button {
+  background-color: transparent;
+  border: none !important;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  height: 20px;
+  background-color: #f1f1f1;
+  border-radius: 50%;
+  width: 24px;
+}
+
+.fa-plus-circle {
+  font-size: 15px;
+}
+
+.add-input:hover {
+  height: 25px;
+  background-color: #f1f1f1;
+  border-radius: 50%;
+  width: 30px;
+}
+
+.fa-plus {
+  color: green;
+}
+
+.fa-minus , .fa-trash-alt{
+  color: red;
+}
+
+
+/* TOTAL */
+
+.total {
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  font-size: 24px;
+  font-weight: 600;
+  justify-content: space-between;
+  margin: 40px 0 0;
+}
+
+.total span:nth-of-type(2) {
+  align-items: center;
+  border-radius: 50%;
+  border: 3px solid black;
+  display: flex;
+  justify-content: center;
+  margin-right: 25px;
+  min-height: 30px;
+  min-width: 30px;
+  padding: 5px;
+  text-align: center;
+}
