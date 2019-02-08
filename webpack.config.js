@@ -6,6 +6,7 @@ module.exports = {
       filename: 'app.js',
       path: path.join(__dirname, '/static')
     },
+    mode: 'development',
     module: {
       rules:[
         {
@@ -14,5 +15,6 @@ module.exports = {
           loader: 'babel-loader'
         }
       ]
-    }
+    },
+    devtool: 'cheap-eval-source-map'
 };
