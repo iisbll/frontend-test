@@ -35,10 +35,13 @@ class App extends Component {
 
   onAddInput = () => {
     const { counterName } = this.state;
-    addCounter(counterName).then(() => {
-      this.onGetCounters();
-      this.setState({ counterName: '' });
-    });
+    const TRIMMED = counterName.trim();
+    if (!_.isEmpty(TRIMMED)) {
+      addCounter(counterName).then(() => {
+        this.onGetCounters();
+        this.setState({ counterName: '' });
+      });
+    }
   }
 
   onDeleteCounter = (id) => {
@@ -46,8 +49,7 @@ class App extends Component {
   }
 
   onInputChange = (e) => {
-    const TRIMMED = e.target.value.trim();
-    !_.isEmpty(TRIMMED) && this.setState({ counterName: e.target.value });
+    this.setState({ counterName: e.target.value });
   }
 
   onIncrement = (id) => {
